@@ -1,6 +1,8 @@
 package project0.scala
 import scala.Console.println
 import java.sql.{Connection, DriverManager}
+import scala.io.StdIn.readInt
+import scala.io.StdIn.readLine
 
 
 object MainMenu {
