@@ -1,24 +1,28 @@
 package project0.scala
-import scala.Console.println
-import java.sql.{Connection, DriverManager}
-import scala.io.StdIn.readInt
 import scala.io.StdIn.readLine
-
+import scala.io.StdIn.readInt
+import java.util.Scanner
 
 object MainMenu {
   def main(args: Array[String]): Unit = {
     Console.println("Welcome to Bazaar Findings! Ordinary, or bizarre? What will you find to aid you on your quest?")
 
-    val con = dbConn()
+    print("What would you like to shop for?")
 
-  }
-  def dbConn(): Connection = {
-    val url = "jdbc:mysql://localhost.3306/bazaar_findings"
-    val username = "root"
-    val password = "M0ch@-Life13"
-    val driver = "com.mysql.jdbc.Driver"
-    val connection = DriverManager.getConnection(url, username, password)
-    println("Successfully connected to..." + connection)
-    connection
+    val x=scala.io.StdIn.readLine()
+
+    if (x.equals("Weapons")) {
+      println("Feast your eyes, young adventurer! Arm yourself to the teeth!")
+    }
+    else{
+      if (x.equals("Health Recovery")) {
+        println("Our potions will have you feeling better in no time at all!")
+      }
+      else {
+        if (x.equals("No thanks.")) {
+          println("Come again soon!")
+        }
+      }
+    }
   }
 }
