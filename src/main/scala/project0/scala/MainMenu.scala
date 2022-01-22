@@ -12,7 +12,7 @@ object MainMenu {
     val x=scala.io.StdIn.readLine()
 
     if (x.equals("Weapons")) {
-      println("Feast your eyes, young adventurer! Arm yourself to the teeth!")
+      println("It's dangerous to go alone! Take this!")
     }
     else{
       if (x.equals("Health Recovery")) {
