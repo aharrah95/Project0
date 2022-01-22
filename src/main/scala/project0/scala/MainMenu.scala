@@ -22,6 +22,11 @@ object MainMenu {
         if (x.equals("No thanks.")) {
           println("Come again soon!")
         }
+        else {
+          if (x.equals("I'm here to rob you!")) {
+            println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
+          }
+        }
       }
     }
   }
