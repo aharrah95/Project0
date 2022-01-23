@@ -35,11 +35,9 @@ object MainMenu {
     val username = "root"
     val password = "M0ch@-Life13"
     val driver = "com.mysql.jdbc.Driver"
-    val connection = DriverManager.getConnection(
-      url,
-      username,
-      password
-    )
+
+    var connection: Connection = null
+
     println("Successfully connected to " + connection)
     connection
   }
