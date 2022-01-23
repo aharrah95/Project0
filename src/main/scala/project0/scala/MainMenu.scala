@@ -1,5 +1,9 @@
+package project0.scala
+import java.sql.{Connection, DriverManager}
+
 object MainMenu {
   def main(args: Array[String]): Unit = {
+    val call = dbConn()
     Console.println("Welcome to Bazaar Findings! Ordinary, or bizarre? What will you find to aid you on your quest?")
 
     print("What would you like to shop for?")
@@ -24,5 +28,19 @@ object MainMenu {
         }
       }
     }
+  }
+
+  def dbConn(): Connection = {
+    val url = "jdbc:mysql://localhost:3306/bazaar_findings"
+    val username = "root"
+    val password = "M0ch@-Life13"
+    val driver = "com.mysql.jdbc.Driver"
+    val connection = DriverManager.getConnection(
+      url,
+      username,
+      password
+    )
+    println("Successfully connected to " + connection)
+    connection
   }
 }
