@@ -1,5 +1,9 @@
 package project0.scala
 import java.sql.{Connection, DriverManager}
+import org.apache.spark.sql.execution.SQLExecution
+import java.sql.DriverManager
+import java.sql.Connection
+
 
 object MainMenu {
   def main(args: Array[String]): Unit = {
@@ -35,8 +39,16 @@ object MainMenu {
     val username = "root"
     val password = "M0ch@-Life13"
     val driver = "com.mysql.jdbc.Driver"
+    var connection:Connection = null
 
-    var connection: Connection = null
+    try {
+      Class.forName(driver)
+      connection = DriverManager.getConnection(url,username,password)
+      println("Connected to Database")
+    } catch {
+      case e:Throwable => e.printStackTrace
+    }
+
 
     println("Successfully connected to " + connection)
     connection
