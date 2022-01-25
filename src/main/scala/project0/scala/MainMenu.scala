@@ -20,7 +20,7 @@ object MainMenu {
     val resultSet = statement.executeQuery("SELECT * FROM combat_&_defense;")
     println(resultSet)
     while (resultSet.next() ) {
-      println(resultSet.getString(1)+", " +resultSet.getString(2) +", " +resultSet.getString(3)), resultSet.getString4()
+      println(resultSet.getString(1)+"; " +resultSet.getString(2) +"; " +resultSet.getString(3)); resultSet.getString(4)
     }
   }
 
@@ -29,7 +29,7 @@ object MainMenu {
     val resultSet = statement.executeQuery("SELECT * FROM magic_&_health_recovery;")
     println(resultSet)
     while (resultSet.next() ) {
-      println(resultSet.getString(1)+", " +resultSet.getString(2) +", " +resultSet.getString(3)), resultSet.getString4()
+      println(resultSet.getString(1)+"; " +resultSet.getString(2) +"; " +resultSet.getString(3)); resultSet.getString(4)
     }
   }
 
