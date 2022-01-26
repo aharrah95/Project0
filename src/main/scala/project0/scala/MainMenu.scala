@@ -19,8 +19,9 @@ object MainMenu {
     val statement = connection.createStatement()
     val resultSet = statement.executeQuery("SELECT * FROM combat_&_defense;")
     println(resultSet)
-    while (resultSet.next() ) {
-      println(resultSet.getString(1)+"; " +resultSet.getString(2) +"; " +resultSet.getString(3)); resultSet.getString(4)
+    while (resultSet.next()) {
+      println(resultSet.getString(1) + "; " + resultSet.getString(2) + "; " + resultSet.getString(3));
+      resultSet.getString(4)
     }
   }
 
@@ -28,8 +29,9 @@ object MainMenu {
     val statement = connection.createStatement()
     val resultSet = statement.executeQuery("SELECT * FROM magic_&_health_recovery;")
     println(resultSet)
-    while (resultSet.next() ) {
-      println(resultSet.getString(1)+"; " +resultSet.getString(2) +"; " +resultSet.getString(3)); resultSet.getString(4)
+    while (resultSet.next()) {
+      println(resultSet.getString(1) + "; " + resultSet.getString(2) + "; " + resultSet.getString(3));
+      resultSet.getString(4)
     }
   }
 
@@ -52,8 +54,13 @@ object MainMenu {
           println("Come again soon!")
         }
         else {
-          if (x.equals("I'm here to rob you!")) {
-            println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
+          if (x.equals("I'll buy it!")) {
+            println("Thank you for your business!")
+          }
+          else {
+            if (x.equals("I'm here to rob you!")) {
+              println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
+            }
           }
         }
       }
