@@ -48,6 +48,7 @@ object MainMenu {
       println("It's dangerous to go alone! Take this!")
 
       println("Would you like to buy this item?")
+      val input = readLine()
       if (x.equals(1)) {
         println("Thank you for your business!")
       }
@@ -60,6 +61,7 @@ object MainMenu {
     if (x.equals("Health Recovery")) {
       println("Our potions will have you feeling better in no time at all!")
       println("Would you like to buy this item?")
+      val input=readLine()
       if (x.equals(1)) {
         println("Thank you for your business!")
       }
