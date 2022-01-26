@@ -41,46 +41,38 @@ object MainMenu {
     println("What would you like to shop for?")
 
     val x = scala.io.StdIn.readLine()
-    var yes = 1
-    var no = 2
+    val myBoolean = true;
 
     if (x.equals("Combat & Defense")) {
       println("It's dangerous to go alone! Take this!")
 
-      println("Would you like to buy this item?")
-      val input = readLine()
-      if (x.equals(1)) {
-        println("Thank you for your business!")
+      println("Would you like to buy this item? Enter Yes or No")
+      val input = scala.io.StdIn.readLine()
+      if (input.equals("Yes") || input.equals("yes")) {
+        print("Thank you for your business!")
       }
       else {
-        if (x.equals(2)) {
-          println("Come again soon!")
-        }
+        print("Come again soon!")
       }
     }
+
     if (x.equals("Health Recovery")) {
       println("Our potions will have you feeling better in no time at all!")
-      println("Would you like to buy this item?")
-      val input=readLine()
-      if (x.equals(1)) {
-        println("Thank you for your business!")
+      println("Would you like to buy this item? Enter Yes or No")
+      val input = scala.io.StdIn.readLine()
+      if (input.equals("Yes") || input.equals("Yes")) {
+        print("Thank you for your business!")
       }
       else {
-        if (x.equals(2)) {
-          println("Come again soon!")
-        }
+        print("Come again soon!")
       }
     }
-    else {
-      if (x.equals("No thanks.")) {
-        println("Come again soon!")
-      }
-      if (x.equals("I'm here to rob you!")) {
-        println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
-      }
+    if (x.equals("I'm here to rob you!")) {
+      println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
     }
   }
 }
+
 
 
 
