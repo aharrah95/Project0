@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="Rows 23 and 32, changed commas to semicolons">
+    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="Trying to add option to buy or not.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" afterDir="false" />
     </list>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643146811406</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added &quot;I'll buy it!&quot;">
+      <created>1643217361068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643217361068</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +209,8 @@
     <MESSAGE value="Apache import error" />
     <MESSAGE value="Attempting query test" />
     <MESSAGE value="Rows 23 and 32, changed commas to semicolons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rows 23 and 32, changed commas to semicolons" />
+    <MESSAGE value="Added &quot;I'll buy it!&quot;" />
+    <MESSAGE value="Trying to add option to buy or not." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to add option to buy or not." />
   </component>
 </project>
