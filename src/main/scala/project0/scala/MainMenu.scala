@@ -68,7 +68,7 @@ object MainMenu {
         println("Would you like to buy this item?")
         val confirm = scala.io.StdIn.readLine()
         if (confirm.equals("Yes") || confirm.equals("yes")) {
-          print("Thank you for your business!")
+          println("Thank you for your business!")
           val statement = connection.createStatement()
           val result = statement.executeUpdate(
             s"""
@@ -83,7 +83,7 @@ object MainMenu {
         }
       }
 
-      if (x.equals("2")) {
+      else if (x.equals("2")) {
         println("Our potions will have you feeling better in no time at all!")
         val statement = connection.createStatement()
         val result = statement.executeQuery("SELECT * FROM recovery")

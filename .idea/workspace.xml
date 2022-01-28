@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="Item menus now visible.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" afterDir="false" />
-    </list>
+    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="While-loop inserted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643404159936</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Item menus now visible, about to insert sell function">
+      <created>1643407384992</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643407385025</updated>
+    </task>
+    <task id="LOCAL-00018" summary="While-loop inserted">
+      <created>1643407868559</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643407868559</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +254,8 @@
     <MESSAGE value="Trying to add option to buy or not, set up options 1 and 2." />
     <MESSAGE value="FINAL CODE" />
     <MESSAGE value="Item menus now visible." />
-    <option name="LAST_COMMIT_MESSAGE" value="Item menus now visible." />
+    <MESSAGE value="Item menus now visible, about to insert sell function" />
+    <MESSAGE value="While-loop inserted" />
+    <option name="LAST_COMMIT_MESSAGE" value="While-loop inserted" />
   </component>
 </project>
