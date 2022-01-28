@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="FINAL CODE">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_28.xml" afterDir="false" />
+    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="Item menus now visible.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" afterDir="false" />
     </list>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643236172330</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Item menus now visible.">
+      <created>1643404159936</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643404159936</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +242,7 @@
     <MESSAGE value="Trying to add option to buy or not." />
     <MESSAGE value="Trying to add option to buy or not, set up options 1 and 2." />
     <MESSAGE value="FINAL CODE" />
-    <option name="LAST_COMMIT_MESSAGE" value="FINAL CODE" />
+    <MESSAGE value="Item menus now visible." />
+    <option name="LAST_COMMIT_MESSAGE" value="Item menus now visible." />
   </component>
 </project>
