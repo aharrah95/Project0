@@ -5,6 +5,8 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.util.{InputMismatchException, Scanner}
 import java.sql.{Connection, DriverManager, SQLException}
+import scala.io.StdIn._
+
 
 object MainMenu {
   val url = "jdbc:mysql://localhost:3306/bazaar_findings"
@@ -17,7 +19,7 @@ object MainMenu {
 
   def selectAllWeapons(): Unit = {
     val statement = connection.createStatement()
-    val resultSet = statement.executeQuery("SELECT * FROM combat_&_defense;")
+    val resultSet = statement.executeQuery("SELECT * FROM combat;")
     println(resultSet)
     while (resultSet.next()) {
       println(resultSet.getString(1) + "; " + resultSet.getString(2) + "; " + resultSet.getString(3));
@@ -27,7 +29,7 @@ object MainMenu {
 
   def selectAllRecoveries(): Unit = {
     val statement = connection.createStatement()
-    val resultSet = statement.executeQuery("SELECT * FROM magic_&_health_recovery;")
+    val resultSet = statement.executeQuery("SELECT * FROM recovery;")
     println(resultSet)
     while (resultSet.next()) {
       println(resultSet.getString(1) + "; " + resultSet.getString(2) + "; " + resultSet.getString(3));
@@ -45,11 +47,26 @@ object MainMenu {
 
     if (x.equals("Combat & Defense")) {
       println("It's dangerous to go alone! Take this!")
+      val statement = connection.createStatement()
+      val result = statement.executeQuery("SELECT * FROM combat")
+      while(result.next()) {
+        System.out.print(result.getString("combat_id"))
+        print(" ")
+        System.out.println(result.getString("name"))
+      }
 
-      println("Would you like to buy this item? Enter Yes or No")
+
+      println("Which item would you like to buy? Enter ID number.")
       val input = scala.io.StdIn.readLine()
-      if (input.equals("Yes") || input.equals("yes")) {
+      println("Would you like to buy this item?")
+      val confirm = scala.io.StdIn.readLine()
+      if (confirm.equals("Yes") || confirm.equals("yes")) {
         print("Thank you for your business!")
+        val statement = connection.createStatement()
+        val result = statement.executeUpdate(
+          s"""
+            |INSERT INTO player_inventory(combat_id, Item_Name, Quantity)
+            |""".stripMargin)
       }
       else {
         print("Come again soon!")
@@ -58,20 +75,35 @@ object MainMenu {
 
     if (x.equals("Health Recovery")) {
       println("Our potions will have you feeling better in no time at all!")
-      println("Would you like to buy this item? Enter Yes or No")
-      val input = scala.io.StdIn.readLine()
-      if (input.equals("Yes") || input.equals("Yes")) {
-        print("Thank you for your business!")
+      val statement = connection.createStatement()
+      val result = statement.executeQuery("SELECT * FROM recovery")
+      while(result.next()) {
+        System.out.print(result.getString("recover_id"))
+        print(" ")
+        System.out.println(result.getString("name"))
       }
+
+
+      println("Which item would you like to buy? Enter ID number.")
+      val input = scala.io.StdIn.readLine()
+      println("Would you like to buy this item?")
+      val confirm = scala.io.StdIn.readLine()
+      if (confirm.equals("Yes") || confirm.equals("yes")) {
+        print("Thank you for your business!")
+        val statement = connection.createStatement()
+        val result = statement.executeUpdate(
+          s"""
+             |INSERT INTO player_inventory(recover_id, Item_Name, Quantity)
+             |""".stripMargin)
+      }
+    }
       else {
         print("Come again soon!")
       }
     }
-    if (x.equals("I'm here to rob you!")) {
-      println("I wouldn't do that if I were you. You heard what happened to that guy from Hyrule.")
-    }
   }
-}
+
+
 
 
 
