@@ -46,7 +46,8 @@ object MainMenu {
       println("\nPlease select a catagory.")
       println("1. Combat & Defense")
       println("2. Health Recovery")
-      println("3. No thanks")
+      println("3. I'm here to sell.")
+      println("4. No thanks.")
 
 
       val x = scala.io.StdIn.readLine()
@@ -108,6 +109,31 @@ object MainMenu {
                |FROM recovery
                |WHERE recover_id = $input
                |""".stripMargin)
+        }
+      }
+      else if (x.equals("3")) {
+        println("Certainly! What do you have?")
+        val statement = connection.createStatement() //create query statement
+
+        val result = statement.executeQuery("SELECT * FROM player_inventory") //the actual query showing you information
+
+        while(result.next()) { //this is what displays the transaction
+          System.out.print(result.getString("recover_id"))
+          print("\t")
+          System.out.print(result.getString("combat_id"))
+          print("\t")
+          System.out.println(result.getString("Item_Name"))
+        }
+        val input = scala.io.StdIn.readLine() //reads next line the user inputs
+        println("So, you'd like to sell this?")
+        val confirm = scala.io.StdIn.readLine()
+        if (confirm.equals("Yes") || confirm.equals("yes")) { //$ is how you enter variables (e.g. input) into strings
+          val delete = statement.executeUpdate(
+            s"""
+              |DELETE FROM player_inventory
+              |WHERE recover_id = $input or combat_id = $input
+              |""".stripMargin)
+          println("Thank you for selling here!")
         }
       }
       else {

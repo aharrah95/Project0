@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="While-loop inserted" />
+    <list default="true" id="d1446636-ca64-42a2-816c-f5202dc007e1" name="Changes" comment="While-loop inserted, functioning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/project0/scala/MainMenu.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643407868559</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="While-loop inserted, functioning">
+      <created>1643408232308</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643408232308</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +266,7 @@
     <MESSAGE value="Item menus now visible." />
     <MESSAGE value="Item menus now visible, about to insert sell function" />
     <MESSAGE value="While-loop inserted" />
-    <option name="LAST_COMMIT_MESSAGE" value="While-loop inserted" />
+    <MESSAGE value="While-loop inserted, functioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="While-loop inserted, functioning" />
   </component>
 </project>
